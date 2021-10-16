@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="comp_margins" type="dimen">10dp</item>
+
+    <!-- text sizes -->
+    <item name="text_big" type="dimen">25sp</item>
+    <item name="text_med" type="dimen">20sp</item>
+    <item name="text_small" type="dimen">15sp</item>
+</resources>
