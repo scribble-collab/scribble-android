@@ -8,4 +8,7 @@ public class N {
     public static final String AUTH_USER_SIGNUP = "/auth/signup";
     public static final String AUTH_LOGOUT = "/auth/logout";
 
+    // stories
+    public static final String CREATE_USER_STORY = "/story/create";
+    public static final String GET_ORIGINAL_STORIES = "/story/";
 }
