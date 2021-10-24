@@ -15,6 +15,7 @@ import co.scribble.android.scribble.helpers.Pref;
 import co.scribble.android.scribble.helpers.Valid;
 import co.scribble.android.scribble.models.Auth;
 import co.scribble.android.scribble.ui.auth.viewmodel.AuthViewModel;
+import co.scribble.android.scribble.ui.home.HomeActivity;
 
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
     private ActivityLoginBinding binding;
@@ -38,10 +39,18 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         binding.linkSignup.setOnClickListener(this);
     }
 
+    @Override
+    protected void onStart() {
+        super.onStart();
+        if (Pref.getAuthToken(this) != null)
+            startActivity(new Intent(LoginActivity.this, HomeActivity.class));
+    }
+
     private void saveUser(Auth auth) {
         Pref.authToken(this, auth.getAuthToken());
         Pref.saveUser(this, auth.getUserId());
         Snackbar.make(binding.getRoot(), "Login successful", Snackbar.LENGTH_LONG).show();
+        startActivity(new Intent(LoginActivity.this, HomeActivity.class));
     }
 
     @Override
