@@ -6,7 +6,7 @@
         <item name="colorPrimaryVariant">@color/colorTextHigh</item>
         <item name="colorOnPrimary">@color/colorBackgroundHigh</item>
         <!-- Status bar color. -->
-        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+<!--        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>-->
         <!-- Customize your theme here. -->
     </style>
 </resources>

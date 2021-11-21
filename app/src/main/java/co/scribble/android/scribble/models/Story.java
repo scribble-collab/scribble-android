@@ -100,5 +100,20 @@ public class Story {
     public void setTags(List<String> tags) {
         this.tags = tags;
     }
+
+    @Override
+    public String toString() {
+        return "Story{" +
+                "id=" + id +
+                ", createdAt='" + createdAt + '\'' +
+                ", updatedAt='" + updatedAt + '\'' +
+                ", ref=" + ref +
+                ", title='" + title + '\'' +
+                ", description='" + description + '\'' +
+                ", body='" + body + '\'' +
+                ", cover='" + cover + '\'' +
+                ", tags=" + tags +
+                '}';
+    }
 }
 
