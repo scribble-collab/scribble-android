@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:TagsEditText="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true"
+    tools:context=".ui.write.CreateActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_story_title"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/comp_margins"
+            android:layout_marginTop="@dimen/comp_margins"
+            android:layout_marginEnd="@dimen/comp_margins"
+            android:hint="@string/enter_title">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ted_story_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_story_desc"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/comp_margins"
+            android:layout_marginTop="@dimen/comp_margins"
+            android:layout_marginEnd="@dimen/comp_margins"
+            android:hint="@string/enter_description">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ted_story_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:maxLines="3"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_story"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/comp_margins"
+            android:layout_marginTop="@dimen/comp_margins"
+            android:layout_marginEnd="@dimen/comp_margins"
+            android:hint="@string/write_story">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ted_story"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:maxLines="3"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_story_tags"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="@dimen/comp_margins"
+            android:layout_marginTop="@dimen/comp_margins"
+            android:layout_marginEnd="@dimen/comp_margins"
+            android:hint="@string/enter_tags">
+
+        <mabbas007.tagsedittext.TagsEditText
+            android:id="@+id/ted_story_tags"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/comp_padding"
+            TagsEditText:allowSpaceInTag="true"
+            TagsEditText:tagsCloseImageRight="@drawable/tag_close"
+            TagsEditText:tagsBackground="@drawable/tag_background"
+            TagsEditText:tagsTextColor="@color/colorBackgroundHigh"
+            TagsEditText:tagsTextSize="@dimen/defaultTagsTextSize"
+            TagsEditText:tagsCloseImagePadding="@dimen/defaultTagsCloseImagePadding"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btn_story_create"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="@dimen/comp_margins"
+            android:layout_marginEnd="@dimen/comp_margins"
+            android:text="@string/post_story"
+            tools:ignore="RelativeOverlap" />
+
+    </LinearLayout>
+</ScrollView>

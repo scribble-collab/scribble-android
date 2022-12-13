@@ -19,7 +19,7 @@
             android:layout_marginStart="@dimen/comp_margins"
             android:layout_marginBottom="@dimen/comp_margins"
             android:text="Welcome back"
-            android:textColor="@color/black"
+            android:textColor="?colorOnBackground"
             android:textSize="@dimen/text_big"
             android:textStyle="bold" />
 

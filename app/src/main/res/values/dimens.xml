@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <item name="comp_margins" type="dimen">10dp</item>
+    <item name="comp_radius" type="dimen">10dp</item>
+    <item name="comp_padding" type="dimen">10dp</item>
 
     <!-- text sizes -->
     <item name="text_big" type="dimen">25sp</item>
     <item name="text_med" type="dimen">20sp</item>
     <item name="text_small" type="dimen">15sp</item>
+    <item name="text_tiny" type="dimen">12sp</item>
 </resources>

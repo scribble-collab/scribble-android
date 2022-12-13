@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
+import co.scribble.android.scribble.C;
 import co.scribble.android.scribble.models.Auth;
 import co.scribble.android.scribble.network.client.Client;
 import co.scribble.android.scribble.network.services.UserAuth;
@@ -55,7 +56,7 @@ public class AuthViewModel extends ViewModel {
 
             @Override
             public void onFailure(@NonNull Call<Auth> call, @NonNull Throwable t) {
-                msgRes.setValue("Server error, try again later.");
+                msgRes.setValue(C.SERVER_ERR);
             }
         });
     }
@@ -78,7 +79,7 @@ public class AuthViewModel extends ViewModel {
 
             @Override
             public void onFailure(@NonNull Call<Auth> call, @NonNull Throwable t) {
-                msgRes.setValue("Server error, try again later.");
+                msgRes.setValue(C.SERVER_ERR);
             }
         });
     }
